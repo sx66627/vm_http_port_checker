@@ -1,0 +1,19 @@
+timeout_seconds: 10
+check_interval_seconds: 30
+
+targets:
+  - name: "web_service_1"
+    address: "http://httpbin.org/status/200"
+    timeout_seconds: 5
+
+  - name: "slow_site"
+    address: "https://httpbin.org/delay/3"
+    timeout_seconds: 10
+
+  - name: "db_port_check"
+    address: "localhost:5432"
+    timeout_seconds: 3
+
+  - name: "invalid_ssl"
+    address: "https://self-signed.badssl.com"
+    timeout_seconds: 5

@@ -1,0 +1,17 @@
+[Unit]
+Description=VictoriaMetrics Exporter
+After=network.target
+
+[Service]
+Type=simple
+User=victoria
+Group=victoria
+ExecStart=/opt/victoria_exporter/victoria_exporter --port=9133
+Restart=always
+RestartSec=5
+StandardOutput=journal
+StandardError=journal
+WorkingDirectory=/opt/victoria_exporter
+
+[Install]
+WantedBy=multi-user.target
