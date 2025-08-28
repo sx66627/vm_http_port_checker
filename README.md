@@ -1,6 +1,8 @@
 # Http port checker
 Это exporter написанный на Go. Он проверяет доступность портов по http или выполняет http запрос для проверки доступности. И отдает метрики в формате Prometheus.
 
+![browser](github/vm_browser.png "browser")
+
 ## Возможности
 * Поддержка HTTP/HTTPS (игнорирует ошибки SSL)
 * Поддержка доступности порта (tcp)
@@ -41,6 +43,9 @@ targets:
   - name: "invalid_ssl"
     address: "https://self-signed.badssl.com"
 ```
+
+## Пример работы
+![console](github/vm_console.png "console")
 
 ## Загрузка готовой сборки
 Последняя версия всегда [тут](https://github.com/sx66627/vm_http_port_checker/releases/).  
