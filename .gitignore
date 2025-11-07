@@ -1,0 +1,7 @@
+go.sum
+build.sh
+*.backup
+*.old
+victoria_exporter
+victoria_exporter.exe
+*.png
