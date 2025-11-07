@@ -63,10 +63,10 @@ go mod tidy
 
 ### Для Linux (systemd)
 ```bash
-GOOS=linux GOARCH=amd64 go build -o victoria_exporter main.go
+GOOS=linux GOARCH=amd64 go build -o victoria_exporter .
 ```
 
 ### Для Windows
 ```bash
-GOOS=windows GOARCH=amd64 go build -o victoria_exporter.exe main.go
+GOOS=windows GOARCH=amd64 go build -o victoria_exporter.exe .
 ```
